@@ -5,6 +5,9 @@ export default [
   },
   {
     name: "postController",
-    actions: [{ path: "/posts", type: "get", name: "getPosts" }],
+    actions: [
+      { path: "/posts", type: "get", name: "getPosts" },
+      { path: "/posts/generate", type: "get", name: "generatePosts" },
+    ],
   },
 ];

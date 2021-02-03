@@ -1,4 +1,4 @@
-import { getPostsQuery } from "mongo/queries";
+import { getPostsQuery, generatePostsQuery } from "mongo/queries";
 
 /**
  * @swagger
@@ -25,4 +25,9 @@ export const getPosts = async (req, res): Promise<void> => {
   });
 
   res.json(posts);
+};
+
+export const generatePosts = async (req, res): Promise<void> => {
+  await generatePostsQuery();
+  res.send("posts generated success");
 };
