@@ -1,4 +1,4 @@
-import { ProjectPostInterface } from "@/mongo/interfaces";
+import { ProjectPostInterface } from "mongo/interfaces";
 
 export const getPostProject = (): ProjectPostInterface => ({
   _id: 0,

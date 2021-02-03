@@ -1,6 +1,6 @@
-import { Post } from "@/mongo/models";
-import { getPostProject } from "@/mongo/projects";
-import { MongoPostInterface } from "@/mongo/interfaces";
+import { Post } from "mongo/models";
+import { getPostProject } from "mongo/projects";
+import { MongoPostInterface } from "mongo/interfaces";
 
 interface ParamsInterface {
   limit: number;

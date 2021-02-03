@@ -13,8 +13,6 @@ RUN npm install pm2@latest -g
 
 RUN apt-get update && apt-get install iputils-ping
 
-COPY ./docker/nodeServer/ssh.config  /root/.ssh/config
-
 COPY package.json .
 
 COPY yarn.lock .

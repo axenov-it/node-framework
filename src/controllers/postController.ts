@@ -1,4 +1,4 @@
-import { getPostsQuery } from "@/mongo/queries";
+import { getPostsQuery } from "mongo/queries";
 
 /**
  * @swagger
