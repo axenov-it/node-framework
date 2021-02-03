@@ -21,7 +21,7 @@ import { setRoutes, mongoose } from "lib";
     swaggerUi.setup(swaggerJsdoc(swaggerConfig))
   );
 
-  app.use("/api/v1", router);
+  app.use(router);
 
   app.listen(port, () => {
     console.log(`API SERVER LISTENING AT ${process.env.APP_HOST}:${port}`);

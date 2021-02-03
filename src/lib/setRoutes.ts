@@ -13,6 +13,7 @@ export default async function (Router) {
           "\x1b[31m",
           `ACTION ${action.name} IS NOT EXISTS IN CONTROLLER ${route.name}`
         );
+
       Router[action.type](action.path, controller[action.name]);
     }
   }
