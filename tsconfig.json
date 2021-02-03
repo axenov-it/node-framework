@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@/mongo/*": ["mongo/*"],
+    },
+    "module": "commonjs",
+    "moduleResolution": "Node",    
+    "target": "ES6",
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules"],
+}
