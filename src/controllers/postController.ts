@@ -2,7 +2,7 @@ import { getPostsQuery, generatePostsQuery } from "mongo/queries";
 
 /**
  * @swagger
- * /api/v1/posts:
+ * /posts:
  *   get:
  *      parameters:
  *        - name: limit
