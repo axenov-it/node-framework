@@ -8,9 +8,6 @@ services:
     ports:
       - "${APP_PORT}:${APP_PORT}"
     environment:
-      MODE: ${MODE}
-      MONGO_REMOTE_SSH_IP: ${MONGO_REMOTE_SSH_IP}
-      MONGO_REMOTE_SSH_PORT: ${MONGO_REMOTE_SSH_PORT}
       DATABASE_PORT: ${DATABASE_PORT}
     volumes:
       - ".:/app"
