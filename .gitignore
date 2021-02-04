@@ -3,5 +3,5 @@ logs
 .env
 docker-compose.yml
 
-sites-available
-sites-enabled
+/docker/nginxServer/config/sites-available
+/docker/nginxServer/config/sites-enabled
