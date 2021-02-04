@@ -7,8 +7,6 @@ services:
       dockerfile: ./docker/nodeServer/Dockerfile
     ports:
       - "${APP_PORT}:${APP_PORT}"
-    environment:
-      DATABASE_PORT: ${DATABASE_PORT}
     volumes:
       - ".:/app"
       - "/app/node_modules"
@@ -49,6 +47,8 @@ services:
       - ./docker/nginxServer/config/sites-available:/etc/nginx/sites-enabled
       - ./docker/nginxServer/config/nginx.conf:/etc/nginx/nginx.conf
       - ./docker/nginxServer/config/env.conf:/etc/nginx/env.conf
+      - ./docker/nginxServer/config/lua:/etc/nginx/lua
+      - ./docker/nginxServer/config/cache.status.conf:/etc/nginx/cache.status.conf
       - ./public:/var/www/framework/public
       - ./docker/nginxServer/logs:/var/log/nginx
       - /var/www/framework/cache
